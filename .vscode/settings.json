@@ -1,5 +1,10 @@
 {
 	"cSpell.words": [
-		"Subarray"
+		"addopts",
+		"basedpyright",
+		"pylint",
+		"pytest",
+		"Subarray",
+		"subarrays"
 	]
 }

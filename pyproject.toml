@@ -5,3 +5,21 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+[tool.pylint."messages control"]
+disable = ["invalid-name", "unused-variable"]
+
+[tool.pylint."messages control"]
+disable = ["unused-variable"]
+[tool.pylint."messages control"]
+
+disable = ["unused-argument"]
+[tool.pylint."messages control"]
+disable = ["unused-import"]
+
+[tool.pylint."messages control"]
+disable = ["unused-wildcard-import"]
+[tool.pylint."messages control"]
+
+[tool.basedpyright]
+reportUnusedVariable = false

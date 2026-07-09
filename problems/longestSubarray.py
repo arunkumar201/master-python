@@ -1,3 +1,9 @@
+'''
+Problem Statement:Given an array arr[] containing integers and an integer k,
+your task is to find the length of the longest subarray where the sum of its
+elements is equal to the given value k.
+If there is no subarray with sum equal to k, return 0.
+'''
 class Solution:
     """
     Problem Statement:Given an array arr[] containing integers and an integer k,
@@ -5,8 +11,7 @@ class Solution:
     elements is equal to the given value k.
     If there is no subarray with sum equal to k, return 0.
     """
-
-    def longestSubarray_bruteForce(self, arr, k):
+    def longest_subarray_brute_force(self, arr, k):
         '''
         Time Complexity=O(N^2)
         Space Complexity= O(N)
@@ -25,7 +30,7 @@ class Solution:
                     max_len = max(max_len, right - left + 1)
         return max_len
 
-    def longestSubarray_better(self, arr, k):
+    def longest_subarray_optimized(self, arr, k):
         '''
         Time Complexity=O(N+N) ~O(2N) ~O(N)
         Space Complexity= O(1)
@@ -59,5 +64,5 @@ if __name__ == "__main__":
     result = sol.longestSubarray_bruteForce(arr, k)
     print("Result:Brute Force", result)
     print("Better Solution")
-    result = sol.longestSubarray_better(arr, k)
+    result = sol.longest_subarray_optimized(arr, k)
     print("Result:Better", result)

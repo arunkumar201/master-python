@@ -3,7 +3,7 @@ from typing import List
 __import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
 
 class Solution:
-    def smallestSubarrays_bruteForce(self, nums: List[int]) -> List[int]:
+    def smallest_subarrays_brute_force(self, nums: List[int]) -> List[int]:
         res: List[int] = []
         n = len(nums)
 
@@ -22,7 +22,7 @@ class Solution:
                     break
         return res
 
-    def smallestSubarrays_bruteForce_1(self, nums: List[int]) -> List[int]:
+    def smallest_subarrays_brute_force_1(self, nums: List[int]) -> List[int]:
         res: List[int] = []
         n = len(nums)
         maxOr = 0
@@ -37,7 +37,7 @@ class Solution:
                     break
         return res[::-1]
 
-    def smallestSubarrays(self, nums: List[int]) -> List[int]:
+    def smallest_subarrays(self, nums: List[int]) -> List[int]:
         global result
         result = []
         n = len(nums)
@@ -72,9 +72,9 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     arr = [1, 0, 2, 1, 3]
-    result = sol.smallestSubarrays_bruteForce(arr)
+    result = sol.smallest_subarrays_brute_force(arr)
     print("result:", result)
-    result = sol.smallestSubarrays_bruteForce_1(arr)
+    result = sol.smallest_subarrays_brute_force_1(arr)
     print("brute force sol-1", result)
-    result = sol.smallestSubarrays(arr)
+    result = sol.smallest_subarrays(arr)
     print("Optimal solution", result)

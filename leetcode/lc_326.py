@@ -4,7 +4,7 @@ import math
 class Solution:
     def isPowerOfThree_iterative(self, n: int) -> bool:
         '''
-        time complexity O(logn of base 3) and  space complexity O(1) 
+        time complexity O(log(n) of base 3) and  space complexity O(1) 
         :param n: 
         :return: 
         '''
